@@ -35,6 +35,7 @@ public class Example implements Serializable {
         Context.exit();
     }
 
+    @SuppressWarnings("unused")
     public void captureContinuation() {
         ContinuationPending continuationPending =
             Context.enter().captureContinuation();
@@ -42,6 +43,7 @@ public class Example implements Serializable {
         throw continuationPending;
     }
 
+    @SuppressWarnings("unused")
     public void print(Object i) {
         System.out.println(i.toString() + " ");
     }
